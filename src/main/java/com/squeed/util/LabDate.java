@@ -1,4 +1,4 @@
-package com.solid.util;
+package com.squeed.util;
 
 
 public class LabDate {
@@ -7,11 +7,11 @@ public class LabDate {
         MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
     }
 
-    public static int getYear() {
+    public int getYear() {
         return 2016;
     }
 
-    public static Day getDay() {
+    public Day getDay() {
         return Day.THURSDAY;
     }
 }

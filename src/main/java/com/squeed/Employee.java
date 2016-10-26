@@ -1,4 +1,4 @@
-package com.solid;
+package com.squeed;
 
 public class Employee {
     private String name;

@@ -1,4 +1,4 @@
-package com.solid;
+package com.squeed;
 
 public enum Role {
     MANAGER,
