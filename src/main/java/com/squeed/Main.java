@@ -1,5 +1,7 @@
 package com.squeed;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,8 +10,8 @@ public class Main {
     }
 
     private void run() {
-        Employee employee = new Employee();
-        LabSecurity security = new LabSecurity();
+        Employee employee = new Employee(Role.GUARD);
+        LabSecurity security = new LabSecurity(new ArrayList<>());
         security.isAdmitted(employee);
     }
 }
