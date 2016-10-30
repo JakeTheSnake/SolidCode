@@ -1,11 +1,7 @@
 package com.squeed.util;
 
 
-public class LabDate {
-
-    public enum Day {
-        MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
-    }
+public class LabCalendarImpl implements LabCalendar {
 
     public int getYear() {
         return 2016;
