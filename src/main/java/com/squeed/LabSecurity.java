@@ -4,14 +4,14 @@ import java.util.List;
 
 public class LabSecurity {
 
-    private List<EmployeeVerifier> verifiers;
+    private List<Authenticator> authenticators;
 
-    public LabSecurity(List<EmployeeVerifier> verifiers) {
-        this.verifiers = verifiers;
+    public LabSecurity(List<Authenticator> authenticators) {
+        this.authenticators = authenticators;
     }
 
     public boolean isAdmitted(Employee employee) {
-        return verifiers.stream()
-            .allMatch(evaluator -> evaluator.verify(employee));
+        return authenticators.stream()
+            .allMatch(evaluator -> evaluator.authenticate(employee));
     }
 }
