@@ -8,8 +8,8 @@ public class Main {
     }
 
     private void run() {
-        Employee employee = new Employee();
-        LabSecurity security = new LabSecurity();
-        security.isAdmitted(employee);
+        //Employee employee = new Employee();
+        //LabSecurity security = new LabSecurity();
+        //security.isAdmitted(employee);
     }
 }
