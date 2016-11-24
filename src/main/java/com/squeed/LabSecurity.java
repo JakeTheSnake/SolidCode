@@ -14,4 +14,8 @@ public class LabSecurity {
         return authenticators.stream()
             .allMatch(evaluator -> evaluator.authenticate(employee));
     }
+
+    public void setAuthenticators(List<Authenticator> authenticators) {
+        this.authenticators = authenticators;
+    }
 }
